@@ -1,10 +1,32 @@
-.vs/
-RPG_SIM/RPG_GAME/RPG_GAME/x64/Debug
-RPG_SIM/RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog
-*.log
-*.tlog
-RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.log
-RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/CL.read.1.tlog
-RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/CL.write.1.tlog
-RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/link.read.1.tlog
-RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/link.write.1.tlog
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
