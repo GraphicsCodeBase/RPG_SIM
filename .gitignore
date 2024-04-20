@@ -8,7 +8,7 @@
 *.obj
 *.suo
 *.tlog
-
+*.log
 # Precompiled Headers
 *.gch
 *.pch
@@ -32,3 +32,8 @@
 *.exe
 *.out
 *.app
+*.log
+*.tlog
+*.vsidx
+RPG_GAME/.vs/RPG_GAME/v17/Browse.VC.db
+RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.log
