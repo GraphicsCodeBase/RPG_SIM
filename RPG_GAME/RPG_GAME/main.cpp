@@ -2,8 +2,7 @@
 
 int main(int argc,char *argv[])
 {
-	//this is a git file test.
-	//this is another git file test.
+	//this is a git test for a repo.
 	//init SDL ?
 	SDL_Init(SDL_INIT_EVERYTHING);
 	//creating an SDL window.

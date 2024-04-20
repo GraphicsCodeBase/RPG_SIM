@@ -37,3 +37,14 @@
 *.vsidx
 RPG_GAME/.vs/RPG_GAME/v17/Browse.VC.db
 RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.log
+*.db-shm
+*.db-wal
+*.exe
+*.pdb
+*.pdb
+*.opendb
+*.obj
+*.ipch
+*.ilk
+*.exe
+*.idb
