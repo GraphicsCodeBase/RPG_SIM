@@ -1,2 +1,4 @@
 .vs/
 RPG_SIM/RPG_GAME/RPG_GAME/x64/Debug
+*.log
+*.tlog
