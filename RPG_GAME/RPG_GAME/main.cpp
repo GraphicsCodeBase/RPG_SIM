@@ -5,6 +5,7 @@ int main(int argc,char *argv[])
 	//this is a git test for a repo.
 	//init SDL ?
 	//this is a desktop file git change.
+	//this is a file change on laptop.
 	SDL_Init(SDL_INIT_EVERYTHING);
 	//creating an SDL window.
 	SDL_Window* window = SDL_CreateWindow("first RPG", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 400, SDL_WINDOW_SHOWN);
