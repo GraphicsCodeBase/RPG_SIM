@@ -33,14 +33,6 @@ RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/link.command.1.tlog
 RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/link.read.1.tlog
 RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/link.write.1.tlog
 RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/RPG_GAME.lastbuildstate
-*.pdb
-*.lastbuildstate
-*.ilk
-*.obj
-*.idb
-*.vsidx
-*.tlog
-.vs/
 RPG_GAME/RPG_GAME/x64/Debug/
 RPG_GAME/RPG_GAME/x64/Debug/main.obj
 RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.exe.recipe
@@ -54,3 +46,11 @@ RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/link.read.1.tlog
 RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/link.write.1.tlog
 RPG_GAME/RPG_GAME/x64/Debug/RPG_GAME.tlog/RPG_GAME.lastbuildstate
 RPG_GAME/RPG_GAME/x64/Debug/vc143.idb
+*.pdb
+*.lastbuildstate
+*.ilk
+*.obj
+*.idb
+*.vsidx
+*.tlog
+.vs/
