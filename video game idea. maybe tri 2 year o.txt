@@ -25,3 +25,7 @@ by completing all the way to the end of the quest will have the player write a c
 
 this would be like undertale where there will be scenes and txt. box. maybe art for the player in 8 bit.?
 
+things to do once the tutorials are done
+========================================
+1. think of a way to implement a dialogue tree.
+for the narrative.
