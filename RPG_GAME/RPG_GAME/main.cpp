@@ -1,26 +1,16 @@
 #include "SDL.h"
 
+// the while idea of the game loop is that it continously goes through everything we need to in the functions.
 int main(int argc,char *argv[])
 {
-	//this is a git test for a repo.
-	//init SDL ?
-	//this is a desktop file git change.
-	//this is a file change on laptop.
-	SDL_Init(SDL_INIT_EVERYTHING);
-	//creating an SDL window.
-	SDL_Window* window = SDL_CreateWindow("first RPG", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 400, SDL_WINDOW_SHOWN);
-	SDL_Renderer* Renderer = SDL_CreateRenderer(window, -1, 0);
-
-	//setting SDL drawColor
-	//setting the background color to green.
-	SDL_SetRenderDrawColor(Renderer, 0, 255, 0, 255);
-
-	//clear the screen.
-	SDL_RenderClear(Renderer);
-
-	SDL_RenderPresent(Renderer);
-
-	SDL_Delay(3000);// set window delay
+	/*
+	* while(gameisrunning)
+	* {
+	* handle any user input 
+	* update all object positions etc etc.
+	* render changes to the display.
+		}
+	*/
 
 	return 0;
 }
