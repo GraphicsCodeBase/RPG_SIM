@@ -1,5 +1,6 @@
 #pragma once
 #include <stdio.h>
+#include <iostream>
 #include "SDL.h"
 
 
@@ -19,13 +20,13 @@ class Game
 		void clean();//memory management
 
 		bool running()//check if the game needs to run the loop again.
-
 		{
 			return isRunning;
 		}
-
+		 
 	private:
+		int cnt = 0;
 		bool isRunning;
 		SDL_Window *window;
-		SDL_Renderer* renderer;
+		SDL_Renderer* renderer; 
 };
