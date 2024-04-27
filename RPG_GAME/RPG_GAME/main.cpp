@@ -6,7 +6,7 @@ int main(int argc,char *argv[])
 {
 	game = new Game();//create a new object instance of game.
 
-	game->init("My first SDL Game", SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,800,600,true);
+	game->init("My first SDL Game", SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,800,600,false);
 
 	while (game->running())
 	{

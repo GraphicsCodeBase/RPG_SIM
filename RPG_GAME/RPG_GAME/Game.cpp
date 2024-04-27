@@ -1,5 +1,10 @@
 #include "Game.hpp"
 
+
+//creating a SDL texture object.
+SDL_Texture* playerTex;
+
+
 // we are defining all the class functions here.
 Game::Game()
 {
@@ -44,6 +49,10 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		isRunning = false;
 	}
 
+	SDL_Surface* tmpSurface = IMG_Load("assets/player.png");
+	playerTex = SDL_CreateTextureFromSurface(renderer, tmpSurface);
+	SDL_FreeSurface(tmpSurface);
+
 }
 void Game::handleEvents()
 {
@@ -62,14 +71,17 @@ void Game::handleEvents()
 }
 void Game::update()
 {
-	cnt++;
-	std::cout << cnt << std::endl;
+	//this is where the logic of the update function will be in.
 }
 
 void Game::render()
 {
 	//clear what is in the render buffer
 	SDL_RenderClear(renderer);
+	//this is where we add the textures to be rendered.
+	SDL_RenderCopy(renderer, playerTex, NULL, NULL);
+
+
 	// this is where we would add stuff to renderer.
 	SDL_RenderPresent(renderer);
 }
