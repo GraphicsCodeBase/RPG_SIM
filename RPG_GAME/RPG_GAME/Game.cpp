@@ -1,10 +1,8 @@
 #include "Game.hpp"
 #include "TextureManager.h"
+#include "GameObject.h"
 
-//creating a SDL texture object.
-SDL_Texture* playerTex;
-SDL_Rect srcR, destR;//source rectanmgle and destination rectangle.
-
+GameObject* player;
 // we are defining all the class functions here.
 Game::Game()
 {
@@ -48,7 +46,8 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		//if SDL doesnt init correctly, stop running the game.
 		isRunning = false;
 	}
-	playerTex = TextureManager::LoadTexture("assets/player.png", renderer);
+	player = new GameObject("assets/player.png", renderer); 
+
 }
 void Game::handleEvents()
 {
@@ -67,13 +66,7 @@ void Game::handleEvents()
 }
 void Game::update()
 {
-	cnt++;
-	//this is where the logic of the update function will be in.
-	//setting the size of the sprite.
-	destR.h = 64;
-	destR.w = 64;
-
-	destR.x = cnt;
+	player->Update();
 }
 
 void Game::render()
@@ -81,9 +74,7 @@ void Game::render()
 	//clear what is in the render buffer
 	SDL_RenderClear(renderer);
 	//this is where we add the textures to be rendered.
-	SDL_RenderCopy(renderer, playerTex, NULL, &destR);
-
-
+	player->Render();
 	// this is where we would add stuff to renderer.
 	SDL_RenderPresent(renderer);
 }
