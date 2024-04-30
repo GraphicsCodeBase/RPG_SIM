@@ -4,7 +4,7 @@ class GameObject
 {
 	public:
 		//creating the constructor.
-		GameObject(const char* textureSheet, SDL_Renderer* ren);
+		GameObject(const char* textureSheet, SDL_Renderer* ren, int x, int y); 
 		~GameObject();//destructor.
 
 		void Update();
