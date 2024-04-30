@@ -3,6 +3,8 @@
 #include "GameObject.h"
 
 GameObject* player;
+GameObject* enemy;
+
 // we are defining all the class functions here.
 Game::Game()
 {
@@ -47,6 +49,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 		isRunning = false;
 	}
 	player = new GameObject("assets/player.png", renderer,0,0); 
+	enemy = new GameObject("assets/enemy.png", renderer,50,50); 
 
 }
 void Game::handleEvents()
@@ -67,6 +70,7 @@ void Game::handleEvents()
 void Game::update()
 {
 	player->Update();
+	enemy->Update();
 }
 
 void Game::render()
@@ -75,6 +79,7 @@ void Game::render()
 	SDL_RenderClear(renderer);
 	//this is where we add the textures to be rendered.
 	player->Render();
+	enemy->Render();
 	// this is where we would add stuff to renderer.
 	SDL_RenderPresent(renderer);
 }
