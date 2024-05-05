@@ -1,11 +1,11 @@
 #include "GameObject.h"
 #include "TextureManager.h"
 
-GameObject::GameObject(const char* textureSheet, SDL_Renderer* ren, int x , int y)
+GameObject::GameObject(const char* textureSheet, int x , int y)
 {
 	//when we create a game object we need to assign the renderer and the art texture.
-	renderer = ren;
-	objTexture = TextureManager::LoadTexture(textureSheet, ren);
+	//renderer = ren;
+	objTexture = TextureManager::LoadTexture(textureSheet);
 	//setting the x and y position when the game object is created.
 	xPos = x;
 	yPos = y;
@@ -30,6 +30,6 @@ void GameObject::Update()
 
 void GameObject::Render()
 {
-	SDL_RenderCopy(renderer, objTexture, NULL, &destRect);
+	SDL_RenderCopy(Game::renderer, objTexture, NULL, &destRect);
 
 }

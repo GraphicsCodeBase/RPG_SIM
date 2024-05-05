@@ -20,14 +20,18 @@ class Game
 		void render();
 		void clean();//memory management
 
+		//creating a static int variables.
+		static SDL_Renderer *renderer;
+
+
+
 		bool running()//check if the game needs to run the loop again.
 		{
 			return isRunning;
 		}
 		 
 	private:
+		bool isRunning = false;
 		int cnt = 0;
-		bool isRunning;
 		SDL_Window *window;
-		SDL_Renderer* renderer; 
 };
